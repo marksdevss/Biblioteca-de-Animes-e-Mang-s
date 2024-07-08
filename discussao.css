@@ -1,0 +1,256 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#discussion-form {
+    margin-bottom: 40px;
+}
+
+#discussion-form h2 {
+    text-align: center;
+}
+
+#post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#post-form input, #post-form select, #post-form textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#post-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#post-form button:hover {
+    background-color: #c0392b;
+}
+
+section#posts-container {
+    margin-top: 40px;
+}
+
+#posts-container h2 {
+    text-align: center;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: scale(1.02);
+}
+
+.post-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.post-card p {
+    margin: 10px 0;
+}
+
+
+
+#post-form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.post-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.post-card {
+    position: relative;
+}
+
+.post-card .response-section {
+    margin-top: 20px;
+}
+
+.response-card {
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.response-card p {
+    margin: 0;
+}
+
+#response-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#response-form textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#response-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#response-form button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos existentes */
+
+.post-card {
+    position: relative;
+}
+
+.post-card .response-section {
+    margin-top: 20px;
+}
+
+.response-card {
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.response-card p {
+    margin: 0;
+}
+
+#response-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#response-form textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#response-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#response-form button:hover {
+    background-color: #c0392b;
+}
+
+.post-card .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.post-card .post-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-card .post-actions .like-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.post-card .post-actions .like-button:hover {
+    background-color: #2980b9;
+}
+
+.post-card .post-actions .save-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.post-card .post-actions .save-button:hover {
+    background-color: #27ae60;
+}

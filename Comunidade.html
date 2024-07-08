@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Discussion Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="discussao.css">
+</head>
+<body>
+    <header>
+        <h1>Discussion Board</h1>
+        <nav>
+            <a href="ANIME-LISTS.html">Home</a>
+            <a href="BibliotecaList.html">My Library</a>
+            <a href="discussions.html">Discussions</a>
+        </nav>
+    </header>
+    <main>
+        <section id="discussion-form">
+            <h2>Share Your Thoughts</h2>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="Title" required>
+                <select id="post-category">
+                    <option value="anime">Anime</option>
+                    <option value="manga">Manga</option>
+                    <option value="game">Game</option>
+                </select>
+                <textarea id="post-content" placeholder="Write your post here..." required></textarea>
+                <input type="file" id="post-image">
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section id="posts-container">
+            <h2>Discussion Posts</h2>
+            <!-- Posts will be displayed here -->
+        </section>
+    </main>
+    <script src="discussoes.js"></script>
+</body>
+</html>

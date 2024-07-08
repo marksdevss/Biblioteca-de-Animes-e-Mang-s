@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tierlist.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Tier List</h1>
+        <nav>
+            <a href="ANIME-LISTS.html">Home</a>
+            <a href="games.html">Jogos</a>
+        </nav>
+    </header>
+    <main>
+        <form id="add-item-form">
+            <input type="text" id="item-name" placeholder="Anime/Manga Name" required>
+            <ul id="suggestions"></ul>
+            <select id="item-category">
+                <option value="S">S Tier</option>
+                <option value="A">A Tier</option>
+                <option value="B">B Tier</option>
+                <option value="C">C Tier</option>
+                <option value="D">D Tier</option>
+            </select>
+            <button type="submit">Add to Tier List</button>
+        </form>        
+        <div id="tier-list-container">
+            <!-- Tier list categories and items will be displayed here -->
+        </div>
+        <button id="save-tier-list">Save Tier List</button>
+        <button id="share-tier-list">Share Tier List</button>
+
+    </main>
+    <script src="tierlist.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>]
+</body>
+</html>

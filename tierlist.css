@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#tier-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tier-category {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tier-category h2 {
+    margin: 0 0 10px 0;
+}
+
+.tier-items {
+    min-height: 50px;
+    border: 1px dashed #ddd;
+}
+
+.tier-item {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+.tier-item:hover {
+    background-color: #2980b9;
+}
+
+.tier-item button {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tier-item button.edit {
+    background-color: #3498db;
+}
+
+.tier-item button:hover {
+    background-color: #c0392b;
+}
+
+.tier-item button.edit:hover {
+    background-color: #2980b9;
+}
+
+
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#suggestions li:hover {
+    background-color: #eee;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Animes e Mangás</title>
+    <link rel="stylesheet" href="animeLi.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca de Animes e Mangás</h1>
+        <nav>
+            <a href="BibliotecaList.html">Minha Biblioteca</a>
+            <a href="RecomendacoesAM.html">Onde ler/assistir</a>
+            <a href="trailers.html">Trailers</a>
+            <a href="Register.html">Registrar</a>
+            <a href="LoginOtk.html">Logar</a>
+            <a href="Games.html">Jogos</a>
+            <a href="Comunidade.html">Comunidade</a>
+            <a href="tierlist.html">Tier List</a>
+        </nav>
+        <form id="search-form">
+            <select id="search-type">
+                <option value="anime">Anime</option>
+                <option value="manga">Mangá</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Procure por um anime ou mangá...">
+            <button type="submit">Buscar</button>
+            <button type="button" id="clear-button" onclick="clearSearch()">Limpar Busca</button>
+        </form>
+    </header>
+    <div id="user-info" style="text-align: center; margin-top: 20px;">
+        <!-- Informações do usuário logado serão exibidas aqui -->
+    </div>
+    <main id="results-container">
+        <!-- Resultados de Animes e Mangás serão exibidos aqui -->
+    </main>
+    <script src="AnimeList.js"></script>
+</body>
+</html>

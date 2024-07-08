@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+nav a {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+select, input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.anime-card, .manga-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    max-width: 200px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.anime-card:hover, .manga-card:hover {
+    transform: scale(1.05);
+}
+
+.anime-card img, .manga-card img {
+    width: 100%;
+    height: auto;
+}
+
+.anime-card h3, .manga-card h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.anime-card p, .manga-card p {
+    margin: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.anime-card button, .manga-card button {
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.anime-card button:hover, .manga-card button:hover {
+    background-color: #2980b9;
+}
+
+.login-container, .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-container input, .register-container input {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside#sidebar {
+    width: 100%;
+    max-width: 200px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+aside#sidebar h2 {
+    margin-top: 0;
+}
+
+aside#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+aside#sidebar ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    aside#sidebar {
+        margin-bottom: 0;
+    }
+
+    main {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .anime-card, .manga-card {
+        width: 200px;
+    }
+
+    select, input[type="text"], input[type="password"], .login-container input, .register-container input {
+        width: 300px;
+    }
+
+    button {
+        width: auto;
+    }
+}
